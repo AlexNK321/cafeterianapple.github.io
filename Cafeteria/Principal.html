@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Napple</title>
+    <style>
+        .contenedor{
+            position: sticky;
+            display: flex;
+            text-align: center;
+        }
+        .texto-encima{
+            position: absolute;
+            top: 90%;
+            left: 80%;
+            background-color: #a56c53;
+            color: #ffffff;
+            font-weight: bold;
+            font-style: oblique;
+            font-size: 200%;
+        }
+        .centrado{
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #a56c53;
+            color: #ffffff;
+            font-weight: bold;
+            font-style: oblique;
+            width: 100%;
+            font-size: 200%;
+        }
+        .pie{
+            background-color: #6b3f2b;
+            color: white;
+            text-align: center;
+            position: sticky;
+            bottom: 0px;
+            width: 100%;
+            font-size: 120%;
+            font-family: "Brush Script MT";
+        }
+        .image1{
+            margin-top: 3%;
+            height: 40%;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .texto_derecha{
+            text-align: right;
+        }
+        .p{
+            text-align: justify;
+            text-justify: newspaper;
+            font-family: "Latin Modern Roman 12";
+            font-style: oblique;
+            color: #2b2b2b;
+        }
+        .cabecera1{
+            font-size: 300%;
+            color: #6b3f2b;
+            font-family: "Brush Script MT";
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: #ebd3bb;">
+    <audio id="bgMusic" loop volume="0.1">
+    <source src="../Audios/lofi-loop.mp3" type="audio/mp3">
+    Tu navegador no soporta audio HTML5.
+    </audio>
+<!-- Botón de control -->
+    <button id="musicBtn" style="
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+    background-color: var(--accent);
+    color: var(--card);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    ">
+    🔊 Activar música
+</button>
+    <header>
+        <nav>
+            <a href="#" target="_parent">Inicio</a> -
+            <a href="Menú.html" target="_parent">Recetas</a> -
+            <a href="mailto:peterpina2008@gmail.com" target="_parent">Contáctame</a>
+        </nav>
+        <div class="contenedor">
+            <img class="image1" src="/Imágenes/LogoNapple.png" alt="imagen risotto">
+            <div class="centrado">Pasión por el buen café</div>
+            <div class="texto-encima">por Peter Piña</div>
+        </div>
+        <h1 class="cabecera1">Bienvenido a la Cafetería Napple</h1>
+        <hr>
+        <h3>Tabla de contenidos</h3>
+        <ul>
+            <li type="a">Nuestra historia</li>
+            <li type="a">Especialidades</li>
+            <li type="a">Horarios y ubicación</li>
+            <li type="a">Comentarios</li>
+        </ul>
+        <hr>
+    </header>
+    <section>
+        <article>
+            <header>
+                <h2>Nuestra historia</h2>
+                <p class="p">
+                <b>Cafetería Napple</b> nació en el corazón de Ambato con un propósito simple: 
+                compartir momentos felices acompañados del aroma del mejor café artesanal.  
+                Desde 2020 servimos bebidas preparadas con granos seleccionados de la sierra ecuatoriana, 
+                horneamos nuestros propios postres y cuidamos cada detalle para que te sientas como en casa.
+            </p>
+            </header>
+        </article>
+        <hr>
+        <div align="center">
+            <video width="693" height="390" autoplay loop muted playsinline>
+            <source src="../Videos/cafevideo.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </div>
+    </video>
+        <hr>
+        <article>
+            <header>   
+                <h2>Especialidades</h2>
+                <table border="2" cellspacing="5" cellpadding="8" style="margin:auto; text-align:center;">
+                <tr>
+                    <th>Bebida</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Café Napple Blend</td>
+                    <td>Mezcla exclusiva con notas de caramelo y cacao.</td>
+                    <td>$2.50</td>
+                </tr>
+                <tr>
+                    <td>Capuccino Clásico</td>
+                    <td>Espresso con leche vaporizada y espuma cremosa.</td>
+                    <td>$2.80</td>
+                </tr>
+                <tr>
+                    <td>Latte Vainilla</td>
+                    <td>Suave y dulce, con esencia natural de vainilla.</td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>Affogato</td>
+                    <td>Helado artesanal con un shot de espresso caliente.</td>
+                    <td>$3.50</td>
+                </tr>
+            </table>
+            </header>
+        </article>
+        <hr>
+        <article>
+            <header>
+                <h2>Horarios y ubicación</h2>
+                <p class="p">
+                <b>Horarios:</b><br>
+                    Lunes a Viernes: 8:00 a 20:00<br>
+                    Sábados y Domingos: 9:00 a 22:00
+                </p>
+                <p class="p">
+                <b>Ubicación:</b><br>
+                Calle Bolívar y Rocafuerte, Ambato - Ecuador
+                </p>
+            </header>
+        </article>
+        <hr>
+        <article>
+            <header>
+                <h2>¡Tus Comentarios son importantes!</h2>
+                <form action="mailto:peterpina2008@gmail.com" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="10" cols="40" required>Escribe aquí tus comentarios</textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            </header>
+        </article>
+    </section>
+    <hr>
+    <footer class="pie">
+        <p>CopyRight © 2025</p>
+    </footer>
+    <script>
+        const bgMusic = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicBtn');
+
+        let musicOn = false;
+
+        musicBtn.addEventListener('click', () => {
+        if (!musicOn) {
+            bgMusic.play();
+            musicBtn.textContent = "🔇 Silenciar música";
+            musicOn = true;
+        }   else {
+        bgMusic.pause();
+        musicBtn.textContent = "🔊 Activar música";
+        musicOn = false;
+        }
+        });
+</script>
+</body>
+</html>

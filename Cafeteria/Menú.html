@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Napple</title>
+    <style>
+        .contenedor{
+            position: sticky;
+            display: flex;
+            text-align: center;
+        }
+        .texto-encima{
+            position: absolute;
+            top: 90%;
+            left: 80%;
+            background-color: #a56c53;
+            color: #ffffff;
+            font-weight: bold;
+            font-style: oblique;
+            font-size: 200%;
+        }
+        .centrado{
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #a56c53;
+            color: #ffffff;
+            font-weight: bold;
+            font-style: oblique;
+            width: 100%;
+            font-size: 200%;
+        }
+        .pie{
+            background-color: #6b3f2b;
+            color: white;
+            text-align: center;
+            position: sticky;
+            bottom: 0px;
+            width: 100%;
+            font-size: 120%;
+            font-family: "Brush Script MT";
+        }
+        .image1{
+            margin-top: 3%;
+            height: 40%;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .texto_derecha{
+            text-align: right;
+        }
+        .p{
+            text-align: justify;
+            text-justify: newspaper;
+            font-family: "Latin Modern Roman 12";
+            font-style: oblique;
+            color: #2b2b2b;
+        }
+        .cabecera1{
+            font-size: 300%;
+            color: #6b3f2b;
+            font-family: "Brush Script MT";
+            text-align: center;
+        }
+        .body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f4f0;
+            color: #3c2f2f;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 30px;
+            background-color: #d4c0a1;
+        }
+        .h1 { font-size: 2.5em; }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .producto {
+            background-color: #fff8f0;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .producto img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .nombre {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 15px;
+        }
+        .descripcion {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .historia {
+            font-size: 0.9em;
+            color: #6b4e3c;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: #ebd3bb;">
+    <audio id="bgMusic" loop volume="0.1">
+    <source src="../Audios/lofi-loop.mp3" type="audio/mp3">
+    Tu navegador no soporta audio HTML5.
+    </audio>
+<!-- Botón de control -->
+    <button id="musicBtn" style="
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+    background-color: var(--accent);
+    color: var(--card);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    ">
+    🔊 Activar música
+</button>
+    <header>
+        <nav>
+            <a href="Principal.html" target="_parent">Inicio</a> -
+            <a href="#" target="_parent">Recetas</a> -
+            <a href="mailto:peterpina2008@gmail.com" target="_parent">Contáctame</a>
+        </nav>
+        <div class="contenedor">
+            <img class="image1" src="/Imágenes/LogoNapple.png" alt="imagen risotto">
+            <div class="centrado">Pasión por el buen café</div>
+            <div class="texto-encima">por Peter Piña</div>
+        </div>
+        <h1 class="cabecera1">Menú de la Cafetería Napple</h1>
+        <hr>
+    </header>
+    <section class="menu">
+        <!-- Producto 1 -->
+        <div class="producto">
+            <img src="../Imágenes/golden-capuccino.jpg" alt="Golden Capuccino">
+            <div class="nombre">Golden Capuccino</div>
+            <div class="descripcion">Espumoso, dorado y absolutamente celestial.</div>
+            <div class="historia">
+                Creado en un momento de inspiración dorada, este capuccino mezcla espresso, leche espumada y un toque secreto de miel que lo hace brillar. Al probarlo, sentirás una explosión de suavidad y dulzura, como si tus papilas gustativas hubieran entrado en una gala de lujo.
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto">
+            <img src="../Imágenes/mystic-latte.jpg" alt="Mystic Latte">
+            <div class="nombre">Mystic Latte</div>
+            <div class="descripcion">Un viaje místico de sabores.</div>
+            <div class="historia">
+                Inspirado en una mañana de neblina, este latte combina espresso, leche de almendras y una pizca de canela mágica. Cada sorbo es como caminar por un bosque encantado con el aroma de café recién hecho.
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto">
+            <img src="../Imágenes/caramel-phantom.jpg" alt="Caramel Phantom">
+            <div class="nombre">Caramel Phantom</div>
+            <div class="descripcion">Dulce, elegante y con un toque travieso.</div>
+            <div class="historia">
+                Surgió de un experimento secreto en la cafetería, mezclando espresso intenso con caramelo quemado y leche cremosa. Su sabor es tan intenso y encantador que parece un fantasma dulce que te abraza.
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto">
+            <img src="../Imágenes/velvet-mocha-jpg.jpg" alt="Velvet Mocha">
+            <div class="nombre">Velvet Mocha</div>
+            <div class="descripcion">Chocolate y café en perfecta armonía.</div>
+            <div class="historia">
+                Mezcla de cacao belga y espresso fuerte, suavizado con leche vaporizada. Es como deslizarse por una nube de terciopelo mientras disfrutas de un café sofisticado y perfectamente equilibrado.
+            </div>
+        </div>
+        <div class="producto">
+        <img src="../Imágenes/ultra-mega-pine-delight.jpg" alt="Ultramega Pine Delight">
+        <div class="nombre">Ultramega Pine Delight</div>
+        <div class="descripcion">Piña, crema y extravagancia máxima en cada bocado.</div>
+        <div class="historia">
+            Nació de una tarde de inspiración frutal descontrolada. Capas de bizcocho húmedo, crema chantilly y piña caramelizada se combinan para un sabor que desafía la gravedad y la lógica. Es tan ridículamente lujoso que tus papilas gustativas podrían pedir un aplauso.
+        </div>
+    </div>
+
+    <!-- Producto 6: Pastel sofisticado -->
+    <div class="producto">
+        <img src="../Imágenes/gilded-chocolate-truffle.jpg" alt="Gilded Chocolate Truffle">
+        <div class="nombre">Gilded Chocolate Truffle</div>
+        <div class="descripcion">Chocolate oscuro bañado en oro, para paladares exigentes.</div>
+        <div class="historia">
+            Inspirado en la opulencia de las ciudades europeas, este pastel combina trufa de chocolate negro intenso con un baño de polvo de oro comestible. Cada mordisco es como una gala de sabores que baila en tu boca con elegancia absoluta.
+        </div>
+    </div>
+
+    <!-- Producto 7: Postre elegante -->
+    <div class="producto">
+        <img src="../Imágenes/velvet-raspberry-torte.jpg" alt="Velvet Raspberry Torte">
+        <div class="nombre">Velvet Raspberry Torte</div>
+        <div class="descripcion">Terciopelo rojo con un toque ácido de frambuesa.</div>
+        <div class="historia">
+            Capas suaves de bizcocho de terciopelo rojo, crema de queso ligero y un coulis de frambuesa intensamente brillante. Es como un vals de sabores que seduce tu paladar y te hace sentir en un salón de baile francés.
+        </div>
+    </div>
+
+    <!-- Producto 8: Pastel sofisticado -->
+    <div class="producto">
+        <img src="../Imágenes/caramel-royale.jpg" alt="Caramel Royale">
+        <div class="nombre">Caramel Royale</div>
+        <div class="descripcion">Caramelo dorado y crema sedosa en perfecta armonía.</div>
+        <div class="historia">
+            Elaborado con capas de bizcocho mantecoso, relleno de caramelo salado y cobertura de crema suave, este pastel es el epítome de la elegancia dulce. Al probarlo, sentirás que cada bocado es un pequeño tesoro dorado.
+        </div>
+    </div>
+    </section>
+    <hr>
+    <footer class="pie">
+        <p>CopyRight © 2025</p>
+    </footer>
+    <script>
+        const bgMusic = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicBtn');
+
+        let musicOn = false;
+
+        musicBtn.addEventListener('click', () => {
+        if (!musicOn) {
+            bgMusic.play();
+            musicBtn.textContent = "🔇 Silenciar música";
+            musicOn = true;
+        }   else {
+        bgMusic.pause();
+        musicBtn.textContent = "🔊 Activar música";
+        musicOn = false;
+        }
+        });
+</script>
+</body>
+</html>
